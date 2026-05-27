@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kartu Ucapan Idul Adha 1447 H</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+      background: linear-gradient(to bottom, #fff7f2, #ffe4e6);
+    }
+
+    .title-font {
+      font-family: 'Sacramento', cursive;
+    }
+
+    .fade-up {
+      animation: fadeUp 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .floating {
+      animation: floating 4s ease-in-out infinite;
+    }
+
+    @keyframes floating {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .heart {
+      position: absolute;
+      color: rgba(255,255,255,0.8);
+      animation: fly 10s linear infinite;
+      font-size: 18px;
+      pointer-events: none;
+    }
+
+    @keyframes fly {
+      from {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      to {
+        transform: translateY(-120vh) scale(1.2);
+        opacity: 0;
+      }
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .glow-btn:hover {
+      box-shadow: 0 0 25px rgba(255,255,255,0.8);
+      transform: scale(1.05) translateY(-2px);
+    }
+
+    .glow-btn {
+      transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    }
+
+    .hidden-page {
+      display: none;
+    }
+
+    .typing {
+      overflow: hidden;
+      border-right: .15em solid white;
+      white-space: nowrap;
+      animation: typing 4s steps(40, end), blink .8s infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    .magic-card {
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(255,255,255,0.3);
+    }
+
+    .magic-card::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      background: linear-gradient(45deg, rgba(255,255,255,0.7), rgba(255,192,203,0.5), rgba(255,255,255,0.7));
+      z-index: -1;
+      border-radius: 40px;
+      animation: borderGlow 5s linear infinite;
+    }
+
+    @keyframes borderGlow {
+      0% { filter: hue-rotate(0deg); }
+      100% { filter: hue-rotate(360deg); }
+    }
+
+    .shine {
+      position: absolute;
+      top: -120%;
+      left: -40%;
+      width: 50%;
+      height: 300%;
+      background: rgba(255,255,255,0.3);
+      transform: rotate(25deg);
+      animation: shineMove 5s infinite;
+    }
+
+    @keyframes shineMove {
+      0% { left: -60%; }
+      100% { left: 140%; }
+    }
+
+    .highlight-box {
+      min-height: 80px;
+      transition: all 0.8s ease;
+    }
+
+    .gift-box {
+      transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    }
+
+    .gift-box:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 10px 30px rgba(236,72,153,0.2);
+    }
+
+    .bubble {
+      position: absolute;
+      bottom: -100px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.75);
+      backdrop-filter: blur(10px);
+      color: #ec4899;
+      font-weight: 600;
+      font-size: 14px;
+      animation: bubbleFloat cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      pointer-events: none;
+      border: 1px solid rgba(255,255,255,0.5);
+      box-shadow: 0 10px 25px rgba(255,255,255,0.25);
+      white-space: nowrap;
+    }
+
+    @keyframes bubbleFloat {
+      0% {
+        transform: translateY(0) scale(0.7) rotate(0deg);
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      50% {
+        transform: translateY(-60vh) scale(1) rotate(4deg);
+      }
+      100% {
+        transform: translateY(-120vh) scale(1.1) rotate(-4deg);
+        opacity: 0;
+      }
+    }
+
+    .sparkle {
+      position: absolute;
+      animation: twinkle 2s infinite alternate;
+      pointer-events: none;
+    }
+
+    @keyframes twinkle {
+      from {
+        opacity: 0.3;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+    }
+
+    .custom-scroll::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .custom-scroll::-webkit-scrollbar-track {
+      background: rgba(255,255,255,0.15);
+      border-radius: 999px;
+    }
+
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: rgba(236,72,153,0.5);
+      border-radius: 999px;
+    }
+
+    .custom-scroll::-webkit-scrollbar-thumb:hover {
+      background: rgba(236,72,153,0.8);
+    }
+      to {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Hearts -->
+  <div id="hearts"></div>
+
+  <!-- Opening Screen -->
+  <section id="opening" class="min-h-screen flex items-center justify-center px-6 relative overflow-hidden bg-gradient-to-br from-pink-300 via-rose-300 to-orange-200 text-white">
+
+    <div class="absolute inset-0 bg-black/10"></div>
+
+    <div class="absolute top-10 left-10 text-5xl floating opacity-70">✨</div>
+    <div class="absolute bottom-10 right-10 text-6xl floating opacity-60">🌸</div>
+    <div class="absolute top-32 right-20 text-4xl floating opacity-60">💖</div>
+    <div class="absolute bottom-32 left-16 text-5xl floating opacity-50">🕊️</div>
+
+    <div class="text-center z-10 fade-up max-w-3xl glass magic-card rounded-[40px] p-8 md:p-12 relative">
+
+      <div class="shine"></div>
+
+      <div id="highlightScreen" class="hidden absolute inset-0 bg-pink-300/90 backdrop-blur-md z-50 flex items-center justify-center rounded-[40px] px-6 transition-all duration-1000">
+        <p id="highlightText" class="text-2xl md:text-4xl font-semibold leading-relaxed text-center text-white transition-all duration-700"></p>
+      </div>
+
+      <div class="floating text-7xl mb-6">🌸 🐑 🌸</div>
+
+      <h1 class="title-font text-6xl md:text-8xl mb-4 drop-shadow-lg">
+        Selamat Hari Raya
+      </h1>
+
+      <div class="w-32 h-1 bg-white/70 mx-auto rounded-full mb-6"></div>
+
+      <p class="text-xl md:text-2xl font-light mb-8 leading-relaxed">
+        Sebuah pesan kecil yang dibuat dengan penuh ketulusan,
+        untuk seseorang yang spesial di hari yang penuh keberkahan.
+      </p>
+
+      <div class="grid grid-cols-3 gap-4 mb-10 text-center">
+        <div class="glass rounded-2xl py-4 floating">
+          <div class="text-3xl">🤍</div>
+          <p class="text-sm mt-2">Tulus</p>
+        </div>
+
+        <div class="glass rounded-2xl py-4 floating">
+          <div class="text-3xl">🌙</div>
+          <p class="text-sm mt-2">Doa</p>
+        </div>
+
+        <div class="glass rounded-2xl py-4 floating">
+          <div class="text-3xl">✨</div>
+          <p class="text-sm mt-2">Harapan</p>
+        </div>
+      </div>
+
+      <button onclick="startHighlight()"
+        class="glow-btn transition-all duration-500 bg-white text-pink-500 font-semibold px-10 py-4 rounded-full shadow-2xl text-lg">
+        Buka Kartu ✨
+      </button>
+    </div>
+  </section>
+
+  <!-- Main Card -->
+  <section id="card" class="hidden-page h-screen flex items-center justify-center px-6 bg-gradient-to-b from-rose-100 via-pink-50 to-orange-100 relative overflow-hidden">
+
+    <div class="max-w-4xl w-full mx-auto glass rounded-[40px] shadow-2xl p-6 md:p-10 text-center fade-up max-h-[92vh] overflow-y-auto overflow-x-hidden custom-scroll">
+
+      <div class="text-6xl mb-4 floating">🌸 🐑 🌸</div>
+
+      <h2 class="title-font text-5xl md:text-7xl text-pink-500 mb-6">
+        Idul Adha 1447 H
+      </h2>
+
+      
+
+      <div class="space-y-6 text-pink-700 leading-loose text-lg md:text-2xl text-center font-medium">
+        <p>
+          Haiii Fenisaaa, Selamat hari raya Idul Adha 1447H semoga selalu dimudahkan dalam segala urusan yaa dan semoga Idul Adha pertama ini menjadi awalan yang baik untuk kita semua 😊🌹
+        </p>
+
+        <p>
+          Terima kasih karena sudah hadir,
+          dan menjadi seseorang yang sangat berarti dengan caramu sendiri.
+        </p>
+
+        <p>
+          Semoga Idul Adha pertama ini menjadi awal yang manis,
+          penuh cerita baik,
+          dan membawa banyak kebahagiaan untuk kita semua 🌷
+        </p>
+
+        <p class="font-semibold text-pink-600 text-lg md:text-2xl">
+          Selamat Hari Raya Idul Adha 1447 H ✨
+          <br>
+          Semoga kebahagiaan dan keberkahan
+          selalu menyertaimu.
+        </p>
+      </div>
+
+      <div class="mt-12 flex flex-col md:flex-row gap-4 justify-center items-center">
+        <button onclick="showSurprise()"
+          class="bg-pink-500 hover:bg-pink-600 transition-all duration-500 text-white px-8 py-4 rounded-full shadow-xl text-lg font-medium hover:scale-105">
+          Klik untuk Pesan Rahasia 💌
+        </button>
+
+        <button onclick="openGift()"
+          class="bg-orange-400 hover:bg-orange-500 transition-all duration-500 text-white px-8 py-4 rounded-full shadow-xl text-lg font-medium hover:scale-105">
+          Buka Kado 🎁
+        </button>
+      </div>
+
+      <div id="giftSection" class="hidden mt-12 grid md:grid-cols-2 gap-5 text-left">
+
+        <div class="gift-box bg-white/60 rounded-3xl p-6">
+          <h3 class="text-pink-500 font-semibold text-xl mb-3">🌙 Harapan Pertama</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Semoga Idul Adha ini membawa banyak ketenangan dan setiap langkahmu dipenuhi keberanian dan kebahagiaan.
+          </p>
+        </div>
+
+        <div class="gift-box bg-white/60 rounded-3xl p-6">
+          <h3 class="text-pink-500 font-semibold text-xl mb-3">✨ Harapan Kedua</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Semoga semua doa yang kamu simpan diam-diam,
+            perlahan dipeluk oleh takdir terbaik dari Allah.
+          </p>
+        </div>
+
+        <div class="gift-box bg-white/60 rounded-3xl p-6">
+          <h3 class="text-pink-500 font-semibold text-xl mb-3">🤍 Harapan Ketiga</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Semoga kamu selalu dikelilingi orang-orang baik,
+            yang menjaga senyummu dan menghargai hatimu.
+          </p>
+        </div>
+
+        <div class="gift-box bg-white/60 rounded-3xl p-6">
+          <h3 class="text-pink-500 font-semibold text-xl mb-3">🕊️ Harapan Keempat</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Dan semoga Idul Adha pertama ini,
+            menjadi awal yang baik untuk banyak hal indah di depan nanti.
+          </p>
+        </div>
+      </div>
+
+      <div id="surprise"
+        class="hidden mt-10 bg-white/50 rounded-3xl p-8 text-pink-700 text-lg leading-relaxed animate-pulse">
+        Di bawah naungan langit Idul Adha 1447H, aku berdoa agar senyum manis di wajahmu tak pernah pudar. 💖
+
+        <div class="mt-8 flex flex-col md:flex-row gap-4 justify-center items-center">
+          <a href="https://youtu.be/M7oZR-MTEZs?si=TCl-lSrKZhhZlwgw" target="_blank"
+            class="glow-btn bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-full shadow-xl text-base font-medium inline-flex items-center gap-2">
+            🎵 Iqro - Raim Laode
+          </a>
+
+          <a href="https://youtu.be/fMLDOTZ_rjE?si=otv-DLYTJqBxYf5Z" target="_blank"
+            class="glow-btn bg-rose-400 hover:bg-rose-500 text-white px-6 py-3 rounded-full shadow-xl text-base font-medium inline-flex items-center gap-2">
+            💖 Shape Of My Heart
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    
+  </section>
+
+  <audio id="bgm" autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_4a1f42b5cf.mp3?filename=beautiful-piano-ambient-110997.mp3" type="audio/mp3">
+  </audio>
+
+  <script>
+    const highlightMessages = [
+      'good to see you Fenisaaa, hadiah kecil kecilan untukmu di Idul Adha pertama inii 💖',
+      'semoga ini semua menjadi awalan yang baik untuk kita semua 🌙',
+      'semoga kamu suka yaa 😊'
+    ];
+
+    async function startHighlight() {
+      const highlightScreen = document.getElementById('highlightScreen');
+      const text = document.getElementById('highlightText');
+
+      highlightScreen.classList.remove('hidden');
+
+      for (let i = 0; i < highlightMessages.length; i++) {
+        text.style.opacity = '0';
+        text.style.transform = 'translateY(20px) scale(0.96)';
+
+        setTimeout(() => {
+          text.innerHTML = highlightMessages[i];
+          text.style.opacity = '1';
+          text.style.transform = 'translateY(0px) scale(1)';
+        }, 300);
+
+        await new Promise(resolve => setTimeout(resolve, 5000));
+      }
+
+      const opening = document.getElementById('opening');
+      const card = document.getElementById('card');
+
+      opening.style.opacity = '0';
+      opening.style.transition = 'all 1.2s ease';
+
+      setTimeout(() => {
+        opening.style.display = 'none';
+        card.style.display = 'flex';
+        card.style.opacity = '0';
+
+        setTimeout(() => {
+          card.style.transition = 'all 1.5s cubic-bezier(0.22, 1, 0.36, 1)';
+          card.style.opacity = '1';
+        }, 100);
+      }, 1000);
+
+      const music = document.getElementById('bgm');
+      music.play().catch(() => {
+        console.log('Autoplay diblokir browser');
+      });
+    }
+
+    function showSurprise() {
+      document.getElementById('surprise').classList.remove('hidden');
+    }
+
+    function openGift() {
+      document.getElementById('giftSection').classList.remove('hidden');
+    }
+
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.innerHTML = ['❤','✨','💖','🌸','🕊️'][Math.floor(Math.random()*5)];
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
+      heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 10000);
+    }
+
+    function createBubble() {
+      const bubble = document.createElement('div');
+      bubble.classList.add('bubble');
+
+      const messages = ['to my favourite person 💖', 'for Fenisaa 🌸'];
+      bubble.innerHTML = messages[Math.floor(Math.random() * messages.length)];
+
+      bubble.style.left = Math.random() * 90 + 'vw';
+      bubble.style.animationDuration = (Math.random() * 4 + 6) + 's';
+
+      document.body.appendChild(bubble);
+
+      setTimeout(() => {
+        bubble.remove();
+      }, 10000);
+    }
+
+    function createSparkle() {
+      const sparkle = document.createElement('div');
+      sparkle.classList.add('sparkle');
+      sparkle.innerHTML = '✨';
+      sparkle.style.left = Math.random() * 100 + 'vw';
+      sparkle.style.top = Math.random() * 100 + 'vh';
+      sparkle.style.fontSize = (Math.random() * 20 + 10) + 'px';
+      document.body.appendChild(sparkle);
+
+      setTimeout(() => {
+        sparkle.remove();
+      }, 3000);
+    }
+
+    setInterval(createHeart, 350);
+    setInterval(createBubble, 1200);
+    setInterval(createSparkle, 800);
+  </script>
+</body>
+</html>
